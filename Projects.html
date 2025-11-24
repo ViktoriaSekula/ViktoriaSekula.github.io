@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - Viktoria Patrycja Sekula</title>
+
+<!-- Para enlazar el CSS que tiene todos los estilos -->
+<link rel="stylesheet" href="Assets/style.css">
+</head>
+
+<body>
+
+<!-- NAVEGACIÓN -->
+<header>
+<nav>
+<ul>
+    <li><a href="MainPage.html">Home</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="AboutMe.html">About me</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- TITULO -->
+<section class="projects-header">
+    <h1>Projects</h1>
+    <p>Illustrations and artwork</p>
+</section>
+
+<!-- Grid para las miniaturas -->
+<main class="projects-grid">
+
+    <!-- Cada figure es una ilustración -->
+    <!-- "figcaption" es el título para cada ilustración -->
+    <!-- <a> para que al hacer click se abra la imagen en grande de la miniatura -->
+    <figure>
+        <figcaption>Girl Illustration</figcaption>
+        <a href="#modal-girl">
+            <img src="Assets/IMG/Girl.png" alt="Girl">
+        </a>
+    </figure>
+
+    <figure>
+        <figcaption>Cat Illustration</figcaption>
+        <a href="#modal-cat">
+            <img src="Assets/IMG/Cat.png" alt="Cat">
+        </a>
+    </figure>
+
+    <figure>
+        <figcaption>Mushrooms Character Design</figcaption>
+        <a href="#modal-mushrooms">
+            <img src="Assets/IMG/Mushrooms.png" alt="Mushrooms">
+        </a>
+    </figure>
+
+    <figure>
+        <figcaption>Fashion Design</figcaption>
+        <a href="#modal-design">
+            <img src="Assets/IMG/Design.png" alt="Design">
+        </a>
+    </figure>
+
+    <figure>
+        <figcaption>Snake Illustration</figcaption>
+        <a href="#modal-snake">
+            <img src="Assets/IMG/Snake.jpg" alt="Snake">
+        </a>
+    </figure>
+
+    <figure>
+        <figcaption>Flowers Line Art</figcaption>
+        <a href="#modal-flowers">
+            <img src="Assets/IMG/Flowers.jpg" alt="Flowers">
+        </a>
+    </figure>
+
+    <figure>
+        <figcaption>Butterfly Sketch</figcaption>
+        <a href="#modal-butterfly">
+            <img src="Assets/IMG/Butterfly.jpg" alt="Butterfly">
+        </a>
+    </figure>
+
+    <figure>
+        <figcaption>Balloon Sketch</figcaption>
+        <a href="#modal-balloon">
+            <img src="Assets/IMG/Balloon.jpg" alt="Balloon">
+        </a>
+    </figure>
+
+</main>
+
+<!-- MODALES DE IMÁGENES-->
+
+<!-- Cada modal se identifica por su id y aparece al hacer click -->
+<!-- Se activa al hacer click en el <a> correspondiente -->
+<!-- :target en CSS hace que se muestre solo el modal seleccionado -->
+<!-- La cruz (&times;) es para cerrar el modal -->
+<div id="modal-girl" class="modal">
+    <a href="#" class="modal-close">&times;</a>
+    <img class="modal-content" src="Assets/IMG/Girl.png" alt="Girl">
+</div>
+
+<div id="modal-cat" class="modal">
+    <a href="#" class="modal-close">&times;</a>
+    <img class="modal-content" src="Assets/IMG/Cat.png" alt="Cat">
+</div>
+
+<div id="modal-mushrooms" class="modal">
+    <a href="#" class="modal-close">&times;</a>
+    <img class="modal-content" src="Assets/IMG/Mushrooms.png" alt="Mushrooms">
+</div>
+
+<div id="modal-design" class="modal">
+    <a href="#" class="modal-close">&times;</a>
+    <img class="modal-content" src="Assets/IMG/Design.png" alt="Design">
+</div>
+
+<div id="modal-snake" class="modal">
+    <a href="#" class="modal-close">&times;</a>
+    <img class="modal-content" src="Assets/IMG/Snake.jpg" alt="Snake">
+</div>
+
+<div id="modal-flowers" class="modal">
+    <a href="#" class="modal-close">&times;</a>
+    <img class="modal-content" src="Assets/IMG/Flowers.jpg" alt="Flowers">
+</div>
+
+<div id="modal-butterfly" class="modal">
+    <a href="#" class="modal-close">&times;</a>
+    <img class="modal-content" src="Assets/IMG/Butterfly.jpg" alt="Butterfly">
+</div>
+
+<div id="modal-balloon" class="modal">
+    <a href="#" class="modal-close">&times;</a>
+    <img class="modal-content" src="Assets/IMG/Balloon.jpg" alt="Balloon">
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2025 – Viktoria Patrycja Sekula</p>
+</footer>
+
+</body>
+</html>
