@@ -45,23 +45,24 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #3366ff;
+    color: #bbbbbb;
 }
 
 
 
 /*LANDING PAGE*/
 .landing {
-    display: flex;
-    align-items: center;      
-    justify-content: flex-start;  
-    height: 100vh;
-    position: relative;       
+    display: block;
+    /*align-items: center;      
+    justify-content: flex-start;  */
+    min-height: 100vh;       
     padding: 2rem 6rem;
+    position: relative;
 }
 
 .landing-left {
     max-width: 500px;
+    margin-top: 35vh;
 }
 
 .landing-left h1 {
@@ -91,11 +92,11 @@ nav ul li a:hover {
 }
 
 /*GIF pegado a la esquina inferior derecha*/
-.landing-right {
-    position: absolute;   
-    bottom: 0;            
-    right: 0;             
-    max-width: 850px;     
+.landing-right {    
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;        
+    max-width: 750px;   
 }
 
 .landing-right img {
@@ -394,6 +395,61 @@ footer {
     background: #f2f2f2;
     padding: 1rem 0;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 0;
+    width: 100%;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 1700px) {    
+    .landing-right {
+        position: static;
+        max-width: 600px;
+        margin-top: 2rem;
+        margin: 2rem auto 0;
+    }
+
+    .landing-left {
+       max-width: 100%;
+       margin: 0 auto;
+       text-align: center;
+    }
+
+    .landing-left h1 {
+       font-size: 2.4rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .landing {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .landing-right {
+        position: static;
+        max-width: 420px;
+        margin-top: 2rem;
+    }
+
+    .landing-left {
+       max-width: 100%;
+    }
+
+    .landing-left h1 {
+       white-space: normal;
+    }
+}       
